@@ -1,5 +1,6 @@
 import {slideRight} from './slideshow.js';
 import {slideLeft} from './slideshow.js';
+import {openRes} from './openResume';
 
 export function createAbout(){
     var abt = document.createElement("div");
@@ -23,15 +24,20 @@ export function createAbout(){
             obj.classList.add("book");
             obj.setAttribute("data", "./images/book.svg");
             obj.setAttribute("type", "image/svg+xml");
+            obj.setAttribute("id", "theBook");
             var p = document.createElement("p");
             p.classList.add("prime-f");
             p.setAttribute("id", "pm1-Phaze");
             p.textContent= "Who's Thomas Xavier Grasso the III?";
+            var inplt = document.createElement("div");
+            inplt.classList.add("inner-plate", "abs", "flex");
+            inplt.setAttribute("id", "innerPlate"),
             wrapit.appendChild(obj);
             wrapit.appendChild(infoabt);
             infoabt.appendChild(h);
             infoabt.appendChild(p);
             infoabt.appendChild(div);
+            div.appendChild(inplt);
             
             function createPersonal(){
                 var person = document.createElement("div");
@@ -108,8 +114,8 @@ export function createAbout(){
     function resButton(){
         var button = document.createElement("button");
         button.setAttribute("id", "buttonRes");
-        button.setAttribute("onclick", "openRes()");
-        button.classList.add("resbutton", "no-background", "block", "z4");
+        button.addEventListener("click", openRes);
+        button.classList.add("resbutton", "no-background", "block", "z3");
         button.textContent= "View Ressume";
         abt.appendChild(button);
         return button;

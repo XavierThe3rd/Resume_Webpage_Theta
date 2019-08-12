@@ -10,6 +10,9 @@
 #slideHolder2, #slideHolder3, #slideHolder4, #slideHolder5 {
   transform: translateX(100%) scale(0.75);
   transition: all 0.5s ease-in-out 0s; }
+  @media (min-width: 768px) {
+    #slideHolder2, #slideHolder3, #slideHolder4, #slideHolder5 {
+      transform: translateX(100%) scale(0.35); } }
 
 #insideH1, #insideH2, #insideH3 {
   transition: all 0.5s ease-out; }
@@ -160,6 +163,41 @@
 .none {
   display: none; }
 
+.close-button {
+  background: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 10px 0px 0;
+  color: #ff012b;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1;
+  margin: 10px 0px 0;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 6;
+  align-content: center; }
+
+.scrnhold {
+  height: 100%;
+  width: 100%;
+  background: #505050;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: all 0.5s linear;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+  .scrnhold object {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0; }
+
 h1, h2, h3, h4, p {
   font-family: Aproxima-nova, "Catamaran", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   z-index: 2; }
@@ -300,21 +338,26 @@ header {
   .about-holder h3 {
     color: #ffffff;
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1;
     margin: 0px 0 15px; }
     @media (min-width: 1024px) {
       .about-holder h3 {
-        font-size: 70px; } }
+        font-size: 80px; } }
   .about-holder p {
     color: #ffffff;
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.3;
     margin: 0 0 10px;
     word-wrap: break-word; }
     @media (min-width: 1024px) {
       .about-holder p {
+        color: #ffffff;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 1.3;
+        margin: 0 0 25px;
         font-size: 35px; } }
   .about-holder .personal-wrap {
     background: #5a00e9;
@@ -322,21 +365,13 @@ header {
     width: 300px;
     border-radius: 150px;
     margin: -5px auto 0; }
-    @media (min-width: 768px) {
-      .about-holder .personal-wrap {
-        height: 275px;
-        width: 275px; } }
-  @media (min-width: 768px) and (min-width: 1024px) {
-    .about-holder .personal-wrap {
-      height: 250px;
-      width: 250px; } }
-
   .about-holder .personal-holder {
     background: none;
     width: 450px;
     height: 450px;
     border-radius: 0;
-    margin: 0; }
+    margin: 0;
+    transition: all 0.5s ease-out; }
     @media (min-width: 768px) {
       .about-holder .personal-holder {
         background: none;
@@ -381,7 +416,7 @@ header {
       .about-holder .texthold {
         background: none;
         width: 750px;
-        height: 450px;
+        height: 285px;
         border-radius: 0;
         margin: 0; } }
   .about-holder .leftbutton, .about-holder .rightbutton {
@@ -391,6 +426,9 @@ header {
     font-size: 20px;
     z-index: 4;
     margin: 0 -42px; }
+    @media (min-width: 768px) {
+      .about-holder .leftbutton, .about-holder .rightbutton {
+        margin: 0 -55px; } }
   .about-holder .book {
     background: none;
     width: 300px;
@@ -400,10 +438,18 @@ header {
     @media (min-width: 768px) {
       .about-holder .book {
         background: none;
-        width: 350px;
-        height: 350px;
+        width: 410px;
+        height: 410px;
         border-radius: 0px;
         margin: 60px auto 0; } }
+  @media (min-width: 768px) and (min-width: 1024px) {
+    .about-holder .book {
+      background: none;
+      width: 660px;
+      height: 660px;
+      border-radius: 0px;
+      margin: 60px auto 0; } }
+
   .about-holder .resbutton {
     border-color: #ffffff;
     box-sizing: border-box;
@@ -421,7 +467,7 @@ header {
     margin: 10px auto 75px; }
     @media (min-width: 1024px) {
       .about-holder .resbutton {
-        margin: 55px auto 125px; } }
+        margin: 25px auto 125px; } }
 
 .shield {
   width: 350px;
@@ -429,6 +475,16 @@ header {
   top: -26px;
   z-index: 3;
   opacity: 0; }
+
+.inner-plate {
+  background: #ffffff;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  margin: 0;
+  transform: scale(0);
+  transition: all 1s linear;
+  z-index: 5; }
 
 .spec-holder {
   background: black;
@@ -656,29 +712,14 @@ header {
     @media (min-width: 768px) {
       .resume-holder .file-wrap {
         margin: 325px 0 0; } }
-    .resume-holder .file-wrap .close-button {
-      background: none;
-      width: 50px;
-      height: 50px;
-      border-radius: 25px;
-      margin: 10px 0px 0;
-      color: #ff012b;
-      font-size: 20px;
-      font-weight: 100;
-      line-height: 1;
-      margin: 10px 0px 0;
-      animation-duration: 0.5s;
-      animation-fill-mode: forwards;
-      z-index: 5;
-      align-content: center; }
-    .resume-holder .file-wrap button {
+    .resume-holder .file-wrap .folder-btn {
       color: #ffffff;
       font-size: 20px;
       font-weight: 400;
       line-height: 1;
       margin: 75px 0; }
       @media (min-width: 768px) {
-        .resume-holder .file-wrap button {
+        .resume-holder .file-wrap .folder-btn {
           color: #ffffff;
           font-size: 30px;
           font-weight: 500;
@@ -743,20 +784,6 @@ header {
     #fileFright {
       margin: 75px 0px 0px 65px; } }
 
-.scrnhold {
-  height: 100%;
-  width: 100%;
-  background: red;
-  z-index: 5;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  transition: all 0.5s linear;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch; }
-
 .fixed-holder {
   width: 300px;
   height: 360px;
@@ -764,6 +791,10 @@ header {
   right: 0;
   top: 0;
   bottom: 0; }
+  .fixed-holder .scrnhold object {
+    margin: 0;
+    position: relative;
+    top: 0; }
 
 footer {
   box-sizing: border-box;
@@ -1151,7 +1182,7 @@ footer {
     color: #ff012b; } }
 html, body {
   height: 100%;
-  background: black;
+  background: white;
   margin: 25px 0px 0px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -189,7 +189,7 @@ export function resHolder() {
                 btn.textContent= txt;
 				
                 dCon.classList.add(dClazz, "flex", "center", "z3");
-                btn.classList.add("z2", "prime-f","t-center","point", "abs", "no-border", "no-background");
+                btn.classList.add("folder-btn", "z2", "prime-f","t-center","point", "abs", "no-border", "no-background");
                 inObjA.classList.add("file", "file-page", "abs");
                 inObjB.classList.add("file", "file-holder", "abs");
 

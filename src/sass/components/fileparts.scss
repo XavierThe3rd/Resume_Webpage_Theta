@@ -30,18 +30,8 @@
             margin: 325px 0 0;
 
         }
-
-        .close-button {
-            @include dimensions(none, 50px, 50px, 25px, 10px 0px 0);
-            @include fontSettings($hotPink, 20px, 100, 1, 10px 0px 0);
-            animation-duration: 0.5s;
-            animation-fill-mode: forwards;
-            z-index: 5;
-            align-content: center;    
-        }
-    
-
-        button{
+   
+        .folder-btn{
             @include fontSettings($pureWhite, 20px, 400, 1, 75px 0);
 
             @media(min-width: 768px){
@@ -119,21 +109,6 @@
     }
 }
 
-.scrnhold{
-    height: 100%;
-    width: 100%;
-    background: red;
-    z-index: 5;
-    left:0;
-    right:0;
-    top: 0; 
-    bottom: 0;
-    margin: auto;
-    transition: all 0.5s linear;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-}
-
 .fixed-holder{
     width: 300px;
     height: 360px;
@@ -141,4 +116,10 @@
     right: 0;
     top: 0;
     bottom: 0;
+
+    .scrnhold object{
+        margin: 0;
+        position: relative;
+        top: 0;
+    }
 }

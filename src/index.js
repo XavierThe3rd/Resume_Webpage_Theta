@@ -28,6 +28,7 @@ window.is_tablet = ((function(a){if(/ipad|android.+\d safari|tablet/i.test(a))
 })(navigator.userAgent||navigator.vendor||window.opera))?'true':'false';
 */
 
+import "../css/styles.css";
 import {crtAbt, intrDiv, infoHld, resHld, aboutId, introId, resumeId} from './js/appender.js';
 import {gearPhoneAbout} from './js/scrollmagicOut.js';
 import {gearPadAbout} from './js/scrollmagicOut.js';

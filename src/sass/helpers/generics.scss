@@ -150,3 +150,35 @@
 .none{
     display: none;
 }
+
+
+.close-button {
+    @include dimensions(none, 50px, 50px, 25px, 10px 0px 0);
+    @include fontSettings($hotPink, 20px, 100, 1, 10px 0px 0);
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    z-index: 6;
+    align-content: center;    
+}
+
+.scrnhold{
+    height: 100%;
+    width: 100%;
+    background: $pureGrey;
+    z-index: 5;
+    left:0;
+    right:0;
+    top: 0; 
+    bottom: 0;
+    margin: auto;
+    transition: all 0.5s linear;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    
+    object{
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+}
