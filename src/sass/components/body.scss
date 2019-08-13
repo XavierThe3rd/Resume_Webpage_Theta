@@ -7,7 +7,7 @@
         width: 600px;
 
         @media(min-width: 1024px){
-            width: 800px;
+            width: 750px;
             flex-direction: row;
             flex-wrap: wrap;
         }
@@ -44,7 +44,7 @@
             @include dimensions($pureBlack, 600px, 150px, 0, 15px 0 0);
 
             @media (min-width: 1024px){
-                @include dimensions($pureBlack, 370px, 275px, 0, 30px 15px 0);
+                @include dimensions($pureBlack, 345px, 275px, 0, 30px 15px 0);
             }
         }
     

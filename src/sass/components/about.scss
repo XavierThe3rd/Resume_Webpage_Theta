@@ -2,8 +2,6 @@
 .about-holder {
     background: $primePurple;
 
-  
-
     .about-twrap{
         width: 315px;
 
@@ -17,7 +15,7 @@
     }
 
     h3 {
-        @include fontSettings($pureWhite, 60px, 600, 1, 0px 0 15px);
+        @include fontSettings($pureWhite, 60px, 500, 1, 0px 0 15px);
 
         @media(min-width: 1024px){
             font-size: 80px;
@@ -29,18 +27,13 @@
         word-wrap: break-word;
 
         @media(min-width: 1024px){
-            @include fontSettings($pureWhite, 35px, 400, 1.3, 0 0 25px);
+            @include fontSettings($pureWhite, 35px, 500, 1.3, 0 0 25px);
             font-size: 35px;
         }      
     }
 
     .personal-wrap{
-        background: $offPurple;
-        height:300px;
-        width: 300px;
-        border-radius: 150px;
-        margin: -5px auto 0;
-
+        @include dimensions($offPurple, 300px, 300px, 150px, -5px auto 0);
     }
 
     .personal-holder {
@@ -52,22 +45,27 @@
         }
 
         h4 {
-            @include fontSettings($pureWhite, 40px, 400, 1, 10px 0px 0px);
+            @include fontSettings($pureWhite, 40px, 400, 1, 10px 110px 0px);
 
-            @media(min-width: 1024px){
-                font-size: 45px;
+            @media(min-width: 768px){
+                @include fontSettings($pureWhite, 42px, 400, 1, 10px 130px 0px);
+                text-align: left;
+                @media(min-width: 1024px){
+                    font-size: 45px;
+                }
             }
         }
 
         p {
-            @include fontSettings($pureWhite, 18px, 300, 1.5, 10px 70px 10px);
+            @include fontSettings($pureWhite, 18px, 300, 1.5, 10px 75px 10px);
             word-wrap: break-word;
 
             @media(min-width: 768px){
                 font-size: 22px;
+                @include fontSettings($pureWhite, 26px, 300, 1.5, 10px 75px 10px);
 
                 @media(min-width: 1024px){
-                    @include fontSettings($pureWhite, 26px, 300, 1.5, 10px 10px 10px);
+                    @include fontSettings($pureWhite, 26px, 300, 1.5, 10px 75px 10px);
                 }
             }
         }
@@ -77,19 +75,22 @@
         @include dimensions(none, 450px, 280px, 0px, 0);
 
         @media(min-width: 768px){
-            @include dimensions(none, 750px, 285px, 0, 0);
+            @include dimensions(none, 750px, 300px, 0, 0);
         }
     }
 
     .leftbutton, .rightbutton{
-        color: $pureWhite;
-        top: 18px;
+        @include fontSettings($pureWhite, 20px, 500px, 1, 0px -60px 0 -20px);
+        transition: all 0.5s ease-in-out;
+        top: 17px;
         width: 45%;
-        font-size: 20px;
-        z-index: 4;
-        margin: 0 -42px;
-        @media(min-width: 768px){
-            margin: 0 -55px;
+
+        @media(min-width: 400px){
+            margin: 0 -100px;
+
+            @media(min-width: 768px){
+                margin: 0 50px 0 -160px;
+            }
         }
     }
 
@@ -107,8 +108,8 @@
 
     .resbutton{
         @include border($pureWhite, 2px);
-        @include dimensions($primePurple, 300px, 75px, 10px, 10px auto 75px);
-        @include fontSettings($pureWhite, 22px, 500, 1, 10px auto 75px);
+        @include dimensions($primePurple, 300px, 75px, 10px, 20px auto 75px);
+        @include fontSettings($pureWhite, 22px, 500, 1, 20px auto 75px);
         
         @media(min-width: 1024px){
             margin: 25px auto 125px;
@@ -117,8 +118,7 @@
 }
 
 .shield{
-    width: 350px; 
-    height: 350px;
+    @include dimensions(none, 350px, 350px, 0, auto);
     top: -26px;
     z-index: 3;
     opacity: 0;
@@ -127,6 +127,6 @@
 .inner-plate{
     @include dimensions($pureWhite, 300px, 300px, 150px, 0);
     transform: scale(0);
-    transition: all 1s linear;
+    transition: all 1s ease-in-out;
     z-index: 5;
 }

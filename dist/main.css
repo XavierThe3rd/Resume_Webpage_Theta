@@ -343,32 +343,28 @@ header {
     margin: 0px 0 15px; }
     @media (min-width: 1024px) {
       .about-holder h3 {
-        font-size: 70px; } }
+        font-size: 80px; } }
   .about-holder p {
     color: #ffffff;
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.3;
     margin: 0 0 10px;
     word-wrap: break-word; }
     @media (min-width: 1024px) {
       .about-holder p {
+        color: #ffffff;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 1.3;
+        margin: 0 0 25px;
         font-size: 35px; } }
   .about-holder .personal-wrap {
     background: #5a00e9;
-    height: 300px;
     width: 300px;
+    height: 300px;
     border-radius: 150px;
     margin: -5px auto 0; }
-    @media (min-width: 768px) {
-      .about-holder .personal-wrap {
-        height: 275px;
-        width: 275px; } }
-  @media (min-width: 768px) and (min-width: 1024px) {
-    .about-holder .personal-wrap {
-      height: 250px;
-      width: 250px; } }
-
   .about-holder .personal-holder {
     background: none;
     width: 450px;
@@ -388,27 +384,41 @@ header {
       font-size: 40px;
       font-weight: 400;
       line-height: 1;
-      margin: 10px 0px 0px; }
-      @media (min-width: 1024px) {
+      margin: 10px 110px 0px; }
+      @media (min-width: 768px) {
         .about-holder .personal-holder h4 {
-          font-size: 45px; } }
+          color: #ffffff;
+          font-size: 42px;
+          font-weight: 400;
+          line-height: 1;
+          margin: 10px 130px 0px;
+          text-align: left; } }
+  @media (min-width: 768px) and (min-width: 1024px) {
+    .about-holder .personal-holder h4 {
+      font-size: 45px; } }
+
     .about-holder .personal-holder p {
       color: #ffffff;
       font-size: 18px;
       font-weight: 300;
       line-height: 1.5;
-      margin: 10px 70px 10px;
+      margin: 10px 75px 10px;
       word-wrap: break-word; }
       @media (min-width: 768px) {
         .about-holder .personal-holder p {
-          font-size: 22px; } }
+          font-size: 22px;
+          color: #ffffff;
+          font-size: 26px;
+          font-weight: 300;
+          line-height: 1.5;
+          margin: 10px 75px 10px; } }
   @media (min-width: 768px) and (min-width: 1024px) {
     .about-holder .personal-holder p {
       color: #ffffff;
       font-size: 26px;
       font-weight: 300;
       line-height: 1.5;
-      margin: 10px 10px 10px; } }
+      margin: 10px 75px 10px; } }
 
   .about-holder .texthold {
     background: none;
@@ -420,19 +430,25 @@ header {
       .about-holder .texthold {
         background: none;
         width: 750px;
-        height: 250px;
+        height: 300px;
         border-radius: 0;
         margin: 0; } }
   .about-holder .leftbutton, .about-holder .rightbutton {
     color: #ffffff;
-    top: 18px;
-    width: 45%;
     font-size: 20px;
-    z-index: 4;
-    margin: 0 -42px; }
-    @media (min-width: 768px) {
+    font-weight: 500px;
+    line-height: 1;
+    margin: 0px -60px 0 -20px;
+    transition: all 0.5s ease-in-out;
+    top: 17px;
+    width: 45%; }
+    @media (min-width: 400px) {
       .about-holder .leftbutton, .about-holder .rightbutton {
-        margin: 0 -55px; } }
+        margin: 0 -100px; } }
+  @media (min-width: 400px) and (min-width: 768px) {
+    .about-holder .leftbutton, .about-holder .rightbutton {
+      margin: 0 50px 0 -160px; } }
+
   .about-holder .book {
     background: none;
     width: 300px;
@@ -463,19 +479,22 @@ header {
     width: 300px;
     height: 75px;
     border-radius: 10px;
-    margin: 10px auto 75px;
+    margin: 20px auto 75px;
     color: #ffffff;
     font-size: 22px;
     font-weight: 500;
     line-height: 1;
-    margin: 10px auto 75px; }
+    margin: 20px auto 75px; }
     @media (min-width: 1024px) {
       .about-holder .resbutton {
-        margin: 55px auto 125px; } }
+        margin: 25px auto 125px; } }
 
 .shield {
+  background: none;
   width: 350px;
   height: 350px;
+  border-radius: 0;
+  margin: auto;
   top: -26px;
   z-index: 3;
   opacity: 0; }
@@ -501,7 +520,7 @@ header {
       width: 600px; } }
   @media (min-width: 768px) and (min-width: 1024px) {
     .spec-holder {
-      width: 800px;
+      width: 750px;
       flex-direction: row;
       flex-wrap: wrap; } }
 
@@ -550,7 +569,7 @@ header {
   @media (min-width: 768px) and (min-width: 1024px) {
     .spec-holder .spec {
       background: black;
-      width: 370px;
+      width: 345px;
       height: 275px;
       border-radius: 0;
       margin: 30px 15px 0; } }
@@ -1186,6 +1205,6 @@ footer {
     color: #ff012b; } }
 html, body {
   height: 100%;
-  background: white;
-  margin: 25px 0px 0px; }
+  background: black;
+  margin: 27px 0px 0px; }
 

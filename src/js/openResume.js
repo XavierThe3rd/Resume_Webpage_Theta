@@ -39,7 +39,6 @@ export function openRes(){
     }
 
     function xOut(){
-        inthld.style.height = "100%";
         closebtn.style.animationName= "fadeout";
         inplate.style.transform = "scale(0)";
         inplate.style.position = "absolute";
@@ -57,7 +56,10 @@ export function openRes(){
     }
 
     function toScale(){
-        inplate.style.transform = "scale(10)";
+        inplate.style.transform = "scale(9)";
+        if(window.innerWidth > 760){
+            inplate.style.transform = "scale(12)";
+        }
         inplate.addEventListener("transitionend", fixit);
         abthld.appendChild(scrnHolder);
         scrnHolder.appendChild(objA1);
@@ -65,10 +67,9 @@ export function openRes(){
 
     
     bod.removeChild(reshld);
-    inthld.style.height = "0";
     bod.removeChild(foot);
     scrnHolder.style.opacity = "0";
-    window.scrollTo(0,document.body.scrollHeight);
+    
     person.style.opacity = "0";
     person.addEventListener("transitionend", toScale);
 }

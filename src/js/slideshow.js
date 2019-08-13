@@ -39,6 +39,8 @@ function scaleSlide(slide, clear){
     person.style.overflow = "inherit";
     slideH.style.transform = "scale(1)";
     window.setTimeout(clear, 0);
+    document.getElementById("buttonLeft").style.opacity = "1";
+    document.getElementById("buttonRight").style.opacity = "1";
 }
 
 function clearListen(id, scale, to, btnRR, btnRA, btnLR, btnLA){
@@ -66,6 +68,8 @@ export function slideRight(){
     var slideH1 = document.getElementById("slideHolder1");
     slideH1.style.transform = "scale(" + x + ")";
     slideH1.addEventListener("transitionend", toSlide2);
+    document.getElementById("buttonLeft").style.opacity = "0";
+    document.getElementById("buttonRight").style.opacity = "0";
     
 }
 
@@ -85,6 +89,8 @@ function rightAgain1(){
     var slideH2 = document.getElementById("slideHolder2");
     slideH2.style.transform = "scale("+ x +")";
     slideH2.addEventListener("transitionend", toSlide3);
+    document.getElementById("buttonLeft").style.opacity = "0";
+    document.getElementById("buttonRight").style.opacity = "0";
     
 }
 
@@ -102,7 +108,8 @@ export function slideLeft(){
     var slideH3 = document.getElementById("slideHolder3");
     slideH3.style.transform = "scale(" + x + ")";
     slideH3.addEventListener("transitionend", toSlide2A); 
-    slideH3.style.color = "yellow";
+    document.getElementById("buttonLeft").style.opacity = "0";
+    document.getElementById("buttonRight").style.opacity = "0";
 }
 
 function leftAgain1(){
@@ -119,6 +126,8 @@ function leftAgain1(){
     var slideH2 = document.getElementById("slideHolder2");
     slideH2.style.transform = "scale(" + x + ")";
     slideH2.addEventListener("transitionend", toSlide1);
+    document.getElementById("buttonLeft").style.opacity = "0";
+    document.getElementById("buttonRight").style.opacity = "0";
 }
 
 

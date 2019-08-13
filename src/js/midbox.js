@@ -38,6 +38,28 @@ export function createAbout(){
             infoabt.appendChild(p);
             infoabt.appendChild(div);
             div.appendChild(inplt);
+
+            function createpButton(){
+                var buttonL = document.createElement("button");
+                buttonL.setAttribute("id", "buttonLeft");
+                buttonL.addEventListener("click", slideLeft);
+                buttonL.classList.add("leftbutton", "no-background", "no-border", "hgrid10", "grid3", "abs", "flex", "left", "z4");
+                var buttonR = document.createElement("button");  
+                buttonR.setAttribute("id", "buttonRight");
+                buttonR.addEventListener("click", slideRight);
+                buttonR.classList.add("rightbutton", "no-background", "no-border", "hgrid10", "grid3", "abs", "flex", "right", "z4");
+                div.appendChild(buttonL);
+                div.appendChild(buttonR);
+
+                var ArwL = document.createTextNode("\u25c4");
+                buttonL.appendChild(ArwL);
+
+                var ArwR = document.createTextNode("\u25ba");
+                buttonR.appendChild(ArwR);
+
+
+                return buttonL && buttonR
+            } 
             
             function createPersonal(){
                 var person = document.createElement("div");
@@ -62,8 +84,8 @@ export function createAbout(){
                     c.textContent= text2;
                 
                     a.classList.add("texthold", "flex", "column", "abs", "grid10", "hgrid10", "over-x");
-                    b.classList.add("prime-f", "t-center");
-                    c.classList.add("prime-f", "t-center", "over-x");
+                    b.classList.add("prime-f");
+                    c.classList.add("prime-f", "over-x");
                     c.setAttribute("id", "p-aboutPhaze");
                     person.appendChild(a);
                     a.appendChild(b);
@@ -80,28 +102,6 @@ export function createAbout(){
                 return person
             }
 
-            function createpButton(){
-                var buttonL = document.createElement("button");
-                buttonL.setAttribute("id", "buttonLeft");
-                buttonL.addEventListener("click", slideLeft);
-                buttonL.classList.add("leftbutton", "no-background", "no-border", "hgrid10", "grid3", "abs", "center", "flex", "left", "z4");
-                var buttonR = document.createElement("button");  
-                buttonR.setAttribute("id", "buttonRight");
-                buttonR.addEventListener("click", slideRight);
-                buttonR.classList.add("rightbutton", "no-background", "no-border", "hgrid10", "grid3", "abs", "center", "flex", "right", "z4");
-                div.appendChild(buttonL);
-                div.appendChild(buttonR);
-
-                var ArwL = document.createTextNode("\u25c4");
-                buttonL.appendChild(ArwL);
-
-                var ArwR = document.createTextNode("\u25ba");
-                buttonR.appendChild(ArwR);
-
-
-                return buttonL && buttonR
-            } 
-            
             createpButton();
             createPersonal();           
             return  div && h
