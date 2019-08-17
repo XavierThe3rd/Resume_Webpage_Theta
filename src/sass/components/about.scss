@@ -14,7 +14,7 @@
         }     
     }
 
-    h3 {
+    h2 {
         @include fontSettings($pureWhite, 60px, 500, 1, 0px 0 15px);
 
         @media(min-width: 1024px){
@@ -22,7 +22,7 @@
         }      
     }
 
-    p {
+    h3 {
         @include fontSettings($pureWhite, 28px, 500, 1.3, 0 0 10px);
         word-wrap: break-word;
 
@@ -96,6 +96,7 @@
 
     .book{
         @include dimensions(none, 300px, 300px, 0px, 60px auto 15px);
+        position: relative;
 
         @media(min-width: 768px){
             @include dimensions(none, 410px, 410px, 0px, 60px auto 0);

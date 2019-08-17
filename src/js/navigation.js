@@ -1,6 +1,6 @@
-import {aboutPage} from './appender.js';
-import {codePage} from './appender.js';
-import {portfolioPage} from './appender.js';
+import {aboutPage} from './appends/appender.js';
+import {codePage} from './appends/appender.js';
+import {portfolioPage} from './appends/appender.js';
 import {toColor} from './buttonEffect.js';
 
 export function openNav(){

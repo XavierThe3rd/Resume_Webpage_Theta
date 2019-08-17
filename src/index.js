@@ -29,9 +29,9 @@ window.is_tablet = ((function(a){if(/ipad|android.+\d safari|tablet/i.test(a))
 */
 
 import "../css/styles.css";
-import {crtAbt, intrDiv, infoHld, resHld, aboutId, introId, resumeId} from './js/appender.js';
-import {gearPhoneAbout} from './js/scrollmagicOut.js';
-import {gearPadAbout} from './js/scrollmagicOut.js';
+import {crtAbt, intrDiv, infoHld, resHld, aboutId, introId, resumeId} from './js/appends/appender';
+import {gearPhoneAbout} from './js/scrollmagicIn.js';
+import {gearPadAbout} from './js/scrollmagicIn';
 import {openNav} from './js/navigation.js';
 import {openJob} from './js/jobholder.js';
 
@@ -52,8 +52,6 @@ if(window.innerWidth < 760){
 if(window.innerWidth > 760){
     gearPadAbout();
 }
-
-
 
 
 

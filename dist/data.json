@@ -1,0 +1,65 @@
+{
+    "images": {
+        "DragonLogo": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/9/9e/DragonLogoBeta.svg/revision/latest?cb=20190815013914",
+        "GearQuarter": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/3/37/GearQuarterWire.svg/revision/latest?cb=20190815152748",
+        "GearHalf": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/3/3e/GearHalfWire.svg/revision/latest?cb=20190815152814",
+        "GearWhole": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/c/c1/GearWholeWire.svg/revision/latest?cb=20190815152836",
+        "AboutBook": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/3/39/Book.svg/revision/latest?cb=20190816160549",
+        "SlideShield": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/1/1b/SlideShield.svg/revision/latest?cb=20190816160629",
+        "LightBulb": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/0/0c/Lightbulb.svg/revision/latest?cb=20190816135342",
+        "CodePict": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/5/57/Code.svg/revision/latest?cb=20190816135257",
+        "DigPen": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/d/d7/Digpen.svg/revision/latest?cb=20190816135317",
+        "Pencil": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/6/68/Pencil.svg/revision/latest?cb=20190816135403",
+        "Qlogo": "http://www.securitybsides.com/f/QintelLogo_Rev08_15inverted.png",
+        "FileBackPlate": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/e/e8/File-backplate.svg/revision/latest?cb=20190816162557",
+        "FileFrontL": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/8/84/File-frontplate-left.svg/revision/latest?cb=20190816162717",
+        "FileFrontR": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/7/70/File-frontplate-right.svg/revision/latest?cb=20190816162736",
+        "FileHolder": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/2/27/File-holder.svg/revision/latest?cb=20190816162906",
+        "FilePage": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/3/32/File-page.svg/revision/latest?cb=20190816162932",
+        "LogoFoot": "https://vignette.wikia.nocookie.net/personal-dragon-logo/images/3/31/DragonLogoWhite.svg/revision/latest?cb=20190816175250"
+    },
+    "intro": {
+        "SubA": "A resume page of Thomas X. Grasso",
+        "SubB": "see how he can benifit your company below."
+    },
+    "about":{
+        "Title": "About",
+        "SubTitle": "Who's Thomas Xavier Grasso the III?"
+    },
+    "slideshow":{
+        "SlideTitleA": "Somthing1",
+        "SlideParaA": "From the suburbs of Cranberry Pa, I went to highschool at Seneca Valley where I was a member of the varcity lacross team and the quad player for the SV marching band drum-line. As an ameture artist, I combined my passion for metal work and sculpting to create metal sculptures of all kinds.",
+
+        "SlideTitleB": "Somthing2",
+        "SlideParaB": "From the suburbs of Cranberry Pa, I went to highschool at Seneca Valley where I was a member of the varcity lacross team and the quad player for the SV marching band drum-line. As an ameture artist, I combined my passion for metal work and sculpting to create metal sculptures of all kinds.",
+
+        "SlideTitleC": "Somthing3",
+        "SlideParaC": "From the suburbs of Cranberry Pa, I went to highschool at Seneca Valley where I was a member of the varcity lacross team and the quad player for the SV marching band drum-line. As an ameture artist, I combined my passion for metal work and sculpting to create metal sculptures of all kinds."
+    },
+    "specialization":{
+        "SpecTitle": "Specializations",
+        "SpecSubTitle": "What can I provide for your company?"
+    },
+    "specbox": {
+        "BoxTitleA": "Creative Thinking",
+        "BoxParaA": "With acurate creative thinking skills, I can carry an idea for your company and make it into an acurate, eliquent reality with several realities to choose from.",
+
+        "BoxTitleB": "Coding Knowledge",
+        "BoxParaB": "Coding capabilities that are both adiquet and versitile with a knowledgable undestanding of html, scss, javascript, php, and react.",
+
+        "BoxTitleC": "Digital Art Proficiency",
+        "BoxParaC": "With experience in digital art programs from adobe programs to sketch to figma, my expertiece provides an excellent understanding and execution in use to create stunning digital artwork.",
+
+        "BoxTitleD": "Fine Art Proficiency",
+        "BoxParaD": "Providing excelence in fine art skills from illustration to shading and even sculpting, my skillset can carry an idea on paper without the use of technology."
+    },
+    "jobbox": {
+        "JobTitleA": "Internship",
+        "JobPara1A": "from June 25, 2019  -  to August 29, 2019",
+        "JobPara2A": "Qintel located in Pittsburgh PA. is one of the top cyber security companies in the nation which served as an excellent synthesis for my graphic design and coding background.",
+        "JobPara3A": "Responsibilities included merchandise design, business paraphanalia design (brochures, product fliers, ex.), ux/ui for various company matenance materials, and invessigation participation."
+    },
+    "document": {
+        "DocTitle": "Documentation"
+    }
+}

@@ -10,9 +10,11 @@
             height: 1000px; 
         }
 
-        h3 {
+        h2 {
             @include fontSettings($pureWhite, 40px, 500, 1, 120px 0 55px);
             transition: all 0.5s ease-out;
+            z-index: 3;
+            text-align: center;
             
             @media(min-width: 768px){
                 @include fontSettings($pureWhite, 50px, 500, 1, 225px 0 55px);
@@ -88,11 +90,9 @@
     }
 }
 
-
-
-
 #fileFleft {
     margin: 70px 0px 0px -42px;
+    z-index: 4;
 
     @media(min-width: 768px){
         margin: 75px 0px 0px -65px;
@@ -102,6 +102,7 @@
 
 #fileFright {
     margin: 70px 0px 0px 42px;
+    z-index: 4;
 
     @media(min-width: 768px){
         margin: 75px 0px 0px 65px;

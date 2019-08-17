@@ -31,6 +31,7 @@
 
 #fileHolderA, #fileHolderB, #fileHolderC {
     transition: all 0.5s ease-out;
+    z-index:2;
 }
 
 #btn1id, #btn2id, #btn3id {

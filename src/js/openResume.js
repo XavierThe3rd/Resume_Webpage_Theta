@@ -47,7 +47,7 @@ export function openRes(){
         scrnHolder.style.opacity = "0";
     }
 
-    function fixit(){
+    let fixit = () => {
         abthld.appendChild(closebtn);
         inplate.style.position = "fixed";
         closebtn.style.animationName= "fadein";

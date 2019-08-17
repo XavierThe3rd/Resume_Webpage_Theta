@@ -38,6 +38,7 @@
 
     .intro-p1 {
         @include fontSettings($pureWhite, 28px, 500, 1.2, 0);
+        text-align: center;
 
         @media (min-width: 768px){
             @include fontSettings($pureWhite, 30px, 600, 1.3, 0);
@@ -50,6 +51,7 @@
 
     .intro-p2 {
         @include fontSettings($lightPink, 28px, 500, 1.2, 0px 0 125px);
+        text-align: center;
 
         @media (min-width: 768px){
             @include fontSettings($lightPink, 30px, 600, 1.3, 0 0 175px);
