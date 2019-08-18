@@ -46,7 +46,7 @@ export function openNav(){
     element(button2, "btn2id", "code", "prime-f", "opacity-none", "point", "abs", "no-border", "no-background", codePage);
 	element(button3, "btn3id", "portfolio", "prime-f", "opacity-none", "point", "abs", "no-border", "no-background", portfolioPage);
 	
-	if (header.style.height === "50px"){
+	if (header.style.height === "57px"){
         headerFunction("101%", "0.25s", "all 0.3s ease-in, background 0.5s ease-in");
 		toColor("barz1", "btnHead", "#ff0021", null, "translateY(10px) rotate(45deg)", "translateY(1px) rotate(-45deg)", "0");
 		header.appendChild(nav);
@@ -56,7 +56,7 @@ export function openNav(){
         div.appendChild(button3);
 
 	}else{
-        headerFunction("50px", "0.2s", "all 0.5s ease-out, background 1s ease-out");
+        headerFunction("57px", "0.2s", "all 0.5s ease-out, background 1s ease-out");
         fader();
 		toColor("barz1", "btnHead", "#ffffff", null, "translateY(0) rotate(0)", "translateY(0) rotate(0)", "1");
 		var removeNav =document.getElementById("navid");

@@ -2,6 +2,13 @@
 .about-holder {
     background: $primePurple;
 
+    .about-wrap{
+        @media(min-width: 1150px){
+            margin: 50px;
+            padding: 0px 10% 0;
+        }
+    }  
+
     .about-twrap{
         width: 315px;
 
@@ -10,8 +17,20 @@
 
             @media(min-width: 1024px){
                 width:750px;
+
+                @media(min-width: 1150px){
+                    width: 100%;
+                    margin: 0 auto;
+                    flex-direction: row;
+                }
             }
-        }     
+        } 
+        .aboutinfo-wrap{
+            @media(min-width: 1150px){
+                width: 600px;
+            }
+        }  
+
     }
 
     h2 {
@@ -19,6 +38,10 @@
 
         @media(min-width: 1024px){
             font-size: 80px;
+
+            @media(min-width: 1150px){
+                @include fontSettings($pureWhite, 60px, 500, 1, 70px 0 15px);
+            }
         }      
     }
 
@@ -29,11 +52,21 @@
         @media(min-width: 1024px){
             @include fontSettings($pureWhite, 35px, 500, 1.3, 0 0 25px);
             font-size: 35px;
+
+            @media(min-width: 1150px){
+                @include fontSettings($pureWhite, 35px, 500, 1, 0px 0px 25px 0px);
+                width: 350px;
+
+            }
         }      
     }
 
     .personal-wrap{
         @include dimensions($offPurple, 300px, 300px, 150px, -5px auto 0);
+
+        @media(min-width: 1150px){
+            margin: 0;
+        }
     }
 
     .personal-holder {
@@ -42,6 +75,10 @@
 
         @media(min-width: 768px){
             @include dimensions(none, 750px, 450px, 0, 0);
+
+            @media(min-width: 1150px){
+                width: 650px;
+            }
         }
 
         h4 {
@@ -52,6 +89,12 @@
                 text-align: left;
                 @media(min-width: 1024px){
                     font-size: 45px;
+                    text-align: center;
+
+                    @media(min-width: 1150px){
+                        margin: 10px 220px 0px;
+                        text-align: left;
+                    }
                 }
             }
         }
@@ -62,10 +105,14 @@
 
             @media(min-width: 768px){
                 font-size: 22px;
-                @include fontSettings($pureWhite, 26px, 300, 1.5, 10px 75px 10px);
+                @include fontSettings($pureWhite, 20px, 300, 1.5, 10px 75px 10px);
 
                 @media(min-width: 1024px){
-                    @include fontSettings($pureWhite, 26px, 300, 1.5, 10px 75px 10px);
+                    @include fontSettings($pureWhite, 22px, 300, 1.5, 10px 75px 10px);
+
+                    @media(min-width: 1150px){
+                        @include fontSettings($pureWhite, 20px, 300, 1.5, 10px 180px 10px);
+                    }
                 }
             }
         }
@@ -90,6 +137,12 @@
 
             @media(min-width: 768px){
                 margin: 0 50px 0 -160px;
+
+                @media(min-width: 1024px){
+                    margin: 0 -50px;
+                    display: flex;
+                    justify-content: center;
+                }
             }
         }
     }
@@ -99,21 +152,29 @@
         position: relative;
 
         @media(min-width: 768px){
-            @include dimensions(none, 410px, 410px, 0px, 60px auto 0);
+            @include dimensions(none, 400px, 400px, 0px, 90px auto 0);
 
             @media(min-width: 1024px){
-                @include dimensions(none, 660px, 660px, 0px, 60px auto 0);
+                @include dimensions(none, 500px, 500px, 0px, 190px auto 0);
+
+                @media(min-width: 1150px){
+                    @include dimensions(none, 500px, 500px, 0px, 50px 50px 0px 0);
+                }   
             }   
         }
     }
 
     .resbutton{
-        @include border($pureWhite, 2px);
-        @include dimensions($primePurple, 300px, 75px, 10px, 20px auto 75px);
+        @include border($pureWhite, 1px);
+        @include dimensions($primePurple, 300px, 65px, 10px, 20px auto 75px);
         @include fontSettings($pureWhite, 22px, 500, 1, 20px auto 75px);
         
         @media(min-width: 1024px){
             margin: 25px auto 125px;
+
+            @media(min-width: 1150px){
+                margin: 0 auto 50px; 
+            }
         }      
     }
 }

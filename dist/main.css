@@ -25,10 +25,14 @@
   z-index: 2; }
 
 #btn1id, #btn2id, #btn3id {
-  animation-duration: 0.25s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-  animation-name: fadein;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
   transform: translateY(-100px); }
 
 #fileFleft, #fileFright, #fileLock {
@@ -47,12 +51,28 @@
     #fileFright {
       margin: 75px 0px 0px 53px; } }
 
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
 @keyframes fadein {
   0% {
     opacity: 0; }
   100% {
     opacity: 1;
     transform: translateY(0px); } }
+
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+    transform: translateY(0px); }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px); } }
+
 @keyframes fadeout {
   0% {
     opacity: 1;
@@ -60,6 +80,7 @@
   100% {
     opacity: 0;
     transform: translateY(-100px); } }
+
 #titleWrap.visible, #aboutPhaze.visible, #p-aboutPhaze-trig.visible, #resumePhaze.visible {
   opacity: 1;
   transform: translateY(0px) scale(1);
@@ -175,8 +196,10 @@
   font-weight: 100;
   line-height: 1;
   margin: 10px 0px 0;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   z-index: 6;
   align-content: center; }
 
@@ -215,7 +238,7 @@ header {
   box-sizing: border-box;
   border-width: 0px 0px 1px;
   border-style: solid;
-  height: 55px;
+  height: 57px;
   background: black; }
   header h1 {
     color: #ffffff;
@@ -244,19 +267,22 @@ header {
           font-size: 75px; } }
     header nav #btn1id {
       margin-top: 30%;
-      animation-delay: 0.1s; }
+      -webkit-animation-delay: 0.1s;
+              animation-delay: 0.1s; }
       @media (min-width: 760px) {
         header nav #btn1id {
           margin-top: 25%; } }
     header nav #btn2id {
       margin-top: 60%;
-      animation-delay: 0.2s; }
+      -webkit-animation-delay: 0.2s;
+              animation-delay: 0.2s; }
       @media (min-width: 760px) {
         header nav #btn2id {
           margin-top: 50%; } }
     header nav #btn3id {
       margin-top: 90%;
-      animation-delay: 0.3s; }
+      -webkit-animation-delay: 0.3s;
+              animation-delay: 0.3s; }
       @media (min-width: 760px) {
         header nav #btn3id {
           margin-top: 75%; } }
@@ -281,7 +307,6 @@ header {
   @media (min-width: 768px) and (min-width: 1024px) {
     .intro-holder .logo-prime {
       width: 400px; } }
-
   .intro-holder .botrig {
     top: 50%; }
   .intro-holder .title-wrap {
@@ -308,7 +333,6 @@ header {
   @media (min-width: 768px) and (min-width: 1024px) {
     .intro-holder .intro-p1 {
       font-size: 35px; } }
-
   .intro-holder .intro-p2 {
     color: #ff2643;
     font-size: 28px;
@@ -337,7 +361,6 @@ header {
   @media (min-width: 768px) and (min-width: 1024px) {
     .about-holder .about-twrap {
       width: 750px; } }
-
   .about-holder h2 {
     color: #ffffff;
     font-size: 60px;
@@ -399,7 +422,6 @@ header {
   @media (min-width: 768px) and (min-width: 1024px) {
     .about-holder .personal-holder h4 {
       font-size: 45px; } }
-
     .about-holder .personal-holder p {
       color: #ffffff;
       font-size: 18px;
@@ -422,7 +444,6 @@ header {
       font-weight: 300;
       line-height: 1.5;
       margin: 10px 75px 10px; } }
-
   .about-holder .texthold {
     background: none;
     width: 450px;
@@ -451,7 +472,6 @@ header {
   @media (min-width: 400px) and (min-width: 768px) {
     .about-holder .leftbutton, .about-holder .rightbutton {
       margin: 0 50px 0 -160px; } }
-
   .about-holder .book {
     background: none;
     width: 300px;
@@ -473,7 +493,6 @@ header {
       height: 660px;
       border-radius: 0px;
       margin: 60px auto 0; } }
-
   .about-holder .resbutton {
     border-color: #ffffff;
     box-sizing: border-box;
@@ -527,7 +546,6 @@ header {
       width: 750px;
       flex-direction: row;
       flex-wrap: wrap; } }
-
   .spec-holder h2 {
     color: #ffffff;
     font-size: 40px;
@@ -541,7 +559,6 @@ header {
   @media (min-width: 768px) and (min-width: 1024px) {
     .spec-holder h2 {
       font-size: 60px; } }
-
   .spec-holder h3 {
     color: #ffffff;
     font-size: 25px;
@@ -577,7 +594,6 @@ header {
       height: 275px;
       border-radius: 0;
       margin: 30px 15px 0; } }
-
     .spec-holder .spec .specobj {
       width: 50px;
       margin: 10px 15px 15px; }
@@ -623,7 +639,6 @@ header {
       height: 400px;
       border-radius: 0;
       margin: 0 auto; } }
-
     .spec-holder .job-prime img {
       width: 200px;
       margin: 15px auto;
@@ -635,7 +650,6 @@ header {
     .spec-holder .job-prime img {
       width: 350px;
       margin: 25px auto; } }
-
     .spec-holder .job-prime h4 {
       color: #6100ff;
       font-size: 25px;
@@ -659,7 +673,6 @@ header {
       font-weight: inherit;
       line-height: inherit;
       margin: 225px auto 0; } }
-
     .spec-holder .job-prime p {
       color: #ffffff;
       font-size: 12px;
@@ -680,7 +693,6 @@ header {
   @media (min-width: 768px) and (min-width: 1024px) {
     .spec-holder .job-prime p {
       margin: 30px 15px 15px; } }
-
     .spec-holder .job-prime span {
       margin: 10px 0 0; }
     .spec-holder .job-prime .button-job {
@@ -692,7 +704,6 @@ header {
   @media (min-width: 768px) and (min-width: 1024px) {
     .spec-holder .job-prime .button-job {
       transform: translateY(315px); } }
-
       .spec-holder .job-prime .button-job div {
         background: #ffffff;
         width: 30px;
@@ -1182,7 +1193,6 @@ footer {
     border-color: #ff012b; }
     #fileLock:hover div {
       background: #ff012b; }
-
   #jobPrime1:hover {
     border-color: #ff012b;
     transform: scale(1.1); }
@@ -1190,29 +1200,25 @@ footer {
       background: #ff012b; }
     #jobPrime1:hover h4 {
       color: #ff012b; }
-
   #btnHead:hover div {
     background: #ff012b; }
-
   #buttonRight:hover {
     color: #ff012b; }
-
   #buttonLeft:hover {
     color: #ff012b; }
-
   #buttonRes:hover {
     border-color: #ff012b;
     color: #ff012b; } }
+
 @media (max-width: 1050px) {
   #buttonRight:active {
     color: #ff012b; }
-
   #buttonLeft:active {
     color: #ff012b; }
-
   #buttonRes:active {
     border-color: #ff012b;
     color: #ff012b; } }
+
 html, body {
   height: 100%;
   background: black;
