@@ -17,7 +17,7 @@ var slideTitle2 = createText("h4", null, null);
 var slidePar2 = createText("p", "over-x", "p-aboutPhaze");
 var slideTitle3 = createText("h4", null, null);
 var slidePar3 = createText("p", "over-x", "p-aboutPhaze");
-var specTitle = createText("h2", null, "resHPhaze");
+var specTitle = createText("h2", "spec-head", "resHPhaze");
 var specSub = createText("h3", null, "infoH4-trig");
 var boxH1 = createText("h4", null, null);
 var boxP1 = createText("p", null, null);
@@ -27,6 +27,7 @@ var boxH3 = createText("h4", null, null);
 var boxP3 = createText("p", null, null);
 var boxH4 = createText("h4", null, null);
 var boxP4 = createText("p", null, null);
+var jobPH = createText("h2", "job-head", null)
 var jobH1 = createText("h4", "abs", "jobTag");
 var jobP1 = createText("p", "abs", "pId");
 var jobS1A= createText("span", null, null);
@@ -64,6 +65,7 @@ fetch('../../dist/data.json')
     boxP3.textContent = data.specbox.BoxParaC;
     boxH4.textContent = data.specbox.BoxTitleD;
     boxP4.textContent = data.specbox.BoxParaD;
+    jobPH.textContent = data.workhistory.WorkTitle;
     jobH1.textContent = data.jobbox.JobTitleA;
     jobS1A.textContent = data.jobbox.JobPara1A;
     jobS1B.textContent = data.jobbox.JobPara2A;
@@ -71,4 +73,4 @@ fetch('../../dist/data.json')
     docH.textContent = data.document.DocTitle;
 });
 
-export{introSubTitleA, introSubTitleB, aboutTitle, aboutSub, slideTitle1, slidePar1, slideTitle2, slidePar2, slideTitle3, slidePar3, specTitle, specSub, boxH1, boxP1, boxH2, boxP2, boxH3, boxP3, boxH4, boxP4, jobH1, jobP1, docH};
+export{introSubTitleA, introSubTitleB, aboutTitle, aboutSub, slideTitle1, slidePar1, slideTitle2, slidePar2, slideTitle3, slidePar3, specTitle, specSub, boxH1, boxP1, boxH2, boxP2, boxH3, boxP3, boxH4, boxP4, jobPH, jobH1, jobP1, docH};

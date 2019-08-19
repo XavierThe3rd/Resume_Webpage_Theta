@@ -1,5 +1,5 @@
 import {gearMW, gearWW, gearWX, gearWY, gearWZ, gearQV, gearQW, gearQX, gearQY, gearQZ, gearHV, gearHW, gearHX, gearHY, gearHZ, gearH1res, gearQ1res, gearQ2res, gearH2res, gearQ3res, gearH3res, pictogramP1, pictogramP2, pictogramP3, pictogramP4, Qlogo, fileBP, fileLP, fileRP, fileHoldA, filePageA, fileHoldB, filePageB, fileHoldC, filePageC} from '../apiCalls/imageCall'; 
-import {specTitle, specSub, boxH1, boxP1, boxH2, boxP2, boxH3, boxP3, boxH4, boxP4, jobH1, jobP1, docH} from '../apiCalls/textCall';
+import {specTitle, specSub, boxH1, boxP1, boxH2, boxP2, boxH3, boxP3, boxH4, boxP4, jobPH, jobH1, jobP1, docH} from '../apiCalls/textCall';
 import {fileOpen} from '../fileanimation.js';
 import {openDocumentA} from '../fileanimation';
 import {openDocumentB} from '../fileanimation';
@@ -9,9 +9,6 @@ import {openDocumentC} from '../fileanimation';
 export function infoHolder(){
     var specHold = document.createElement("div");
     specHold.classList.add("spec-holder", "flex", "rel", "grid9", "auto", "column");
-
-    var jobH = document.createElement("h2");
-    jobH.textContent= "Work History"; //--!--//
 
     specHold.appendChild(gearWW);
     specHold.appendChild(gearWX);
@@ -77,7 +74,7 @@ export function infoHolder(){
     infoBox("spec2", pictogramP2, boxH2, boxP2);
     infoBox("spec3", pictogramP3, boxH3, boxP3);
     infoBox("spec4", pictogramP4, boxH4, boxP4);
-    specHold.appendChild(jobH);
+    specHold.appendChild(jobPH);
     jobBox(Qlogo, jobH1, jobP1, "openJob()", "jobPrime1");
     
     return specHold;

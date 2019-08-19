@@ -4,8 +4,7 @@
 
     .about-wrap{
         @media(min-width: 1150px){
-            margin: 50px;
-            padding: 0px 10% 0;
+            padding: 7%;
         }
     }  
 
@@ -22,12 +21,13 @@
                     width: 100%;
                     margin: 0 auto;
                     flex-direction: row;
+                    justify-content: center;
                 }
             }
         } 
         .aboutinfo-wrap{
             @media(min-width: 1150px){
-                width: 600px;
+                width: 100%;
             }
         }  
 
@@ -40,7 +40,7 @@
             font-size: 80px;
 
             @media(min-width: 1150px){
-                @include fontSettings($pureWhite, 60px, 500, 1, 70px 0 15px);
+                @include fontSettings($pureWhite, 60px, 500, 1, 70px 0px 15px);
             }
         }      
     }
@@ -54,19 +54,15 @@
             font-size: 35px;
 
             @media(min-width: 1150px){
-                @include fontSettings($pureWhite, 35px, 500, 1, 0px 0px 25px 0px);
-                width: 350px;
+                @include fontSettings($pureWhite, 30px, 500, 1, 0px 0px 10px 0px);
 
             }
         }      
     }
 
     .personal-wrap{
-        @include dimensions($offPurple, 300px, 300px, 150px, -5px auto 0);
+        @include dimensions($offPurple, 300px, 300px, 150px, -5px 120px 0);
 
-        @media(min-width: 1150px){
-            margin: 0;
-        }
     }
 
     .personal-holder {
@@ -77,7 +73,7 @@
             @include dimensions(none, 750px, 450px, 0, 0);
 
             @media(min-width: 1150px){
-                width: 650px;
+                width: 100%;
             }
         }
 
@@ -92,7 +88,7 @@
                     text-align: center;
 
                     @media(min-width: 1150px){
-                        margin: 10px 220px 0px;
+                        margin: 10px 50px 0px;
                         text-align: left;
                     }
                 }
@@ -100,18 +96,18 @@
         }
 
         p {
-            @include fontSettings($pureWhite, 18px, 300, 1.5, 10px 75px 10px);
+            @include fontSettings($pureWhite, 18px, 400, 1.5, 10px 75px 10px);
             word-wrap: break-word;
 
             @media(min-width: 768px){
                 font-size: 22px;
-                @include fontSettings($pureWhite, 20px, 300, 1.5, 10px 75px 10px);
+                @include fontSettings($pureWhite, 20px, 400, 1.5, 10px 75px 10px);
 
                 @media(min-width: 1024px){
-                    @include fontSettings($pureWhite, 22px, 300, 1.5, 10px 75px 10px);
+                    @include fontSettings($pureWhite, 22px, 400, 1.5, 10px 75px 10px);
 
                     @media(min-width: 1150px){
-                        @include fontSettings($pureWhite, 20px, 300, 1.5, 10px 180px 10px);
+                        @include fontSettings($pureWhite, 20px, 400, 1.5, 10px 50px 10px 0px);
                     }
                 }
             }
@@ -123,6 +119,11 @@
 
         @media(min-width: 768px){
             @include dimensions(none, 750px, 300px, 0, 0);
+
+            @media(min-width: 1150px){
+                width: 575px;
+                margin: 0px -120px;
+            }
         }
     }
 
@@ -142,6 +143,10 @@
                     margin: 0 -50px;
                     display: flex;
                     justify-content: center;
+
+                    @media(min-width: 1150px){
+                        margin: 7px 60px 0 -160px;
+                    }
                 }
             }
         }
@@ -158,7 +163,7 @@
                 @include dimensions(none, 500px, 500px, 0px, 190px auto 0);
 
                 @media(min-width: 1150px){
-                    @include dimensions(none, 500px, 500px, 0px, 50px 50px 0px 0);
+                    @include dimensions(none, 100%, 450px, 0px, 50px 60px 0 0);
                 }   
             }   
         }
@@ -166,14 +171,15 @@
 
     .resbutton{
         @include border($pureWhite, 1px);
-        @include dimensions($primePurple, 300px, 65px, 10px, 20px auto 75px);
+        @include dimensions(none, 300px, 65px, 10px, 20px auto 75px);
         @include fontSettings($pureWhite, 22px, 500, 1, 20px auto 75px);
+        transition: all 0.5s ease-in-out;
         
         @media(min-width: 1024px){
             margin: 25px auto 125px;
 
             @media(min-width: 1150px){
-                margin: 0 auto 50px; 
+                margin: -80px 0 5% 52.5%; 
             }
         }      
     }

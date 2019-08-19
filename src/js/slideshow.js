@@ -1,8 +1,4 @@
-var x = "0.75";
-
-if(window.innerWidth > 760){
-    x = "0.35";
-}
+var x = "0.35";
 
 
 function toSlide(slideA, slideB, listen1){

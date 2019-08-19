@@ -53,6 +53,10 @@
         "BoxTitleD": "Fine Art Proficiency",
         "BoxParaD": "Providing excelence in fine art skills from illustration to shading and even sculpting, my skillset can carry an idea on paper without the use of technology."
     },
+    "workhistory":{
+        "WorkTitle": "Work History"
+    },
+
     "jobbox": {
         "JobTitleA": "Internship",
         "JobPara1A": "from June 25, 2019  -  to August 29, 2019",
@@ -63,3 +67,4 @@
         "DocTitle": "Documentation"
     }
 }
+
